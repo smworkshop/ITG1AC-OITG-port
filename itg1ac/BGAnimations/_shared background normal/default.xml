@@ -1,0 +1,8 @@
+<ActorFrame>
+	<children>
+		<Layer
+		File="Background"
+			/>
+		
+	</children>
+</ActorFrame>
