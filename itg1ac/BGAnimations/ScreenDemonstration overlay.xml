@@ -1,4 +1,0 @@
-<ActorFrame><children>
-	<AutoActor File="ScreenGameplay overlay" />
-	<AutoActor File="ScreenAttract overlay" />
-</children></ActorFrame>
