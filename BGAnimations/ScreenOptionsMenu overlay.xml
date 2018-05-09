@@ -5,7 +5,7 @@
 		Font="ScreenOptions serial number"
 		Condition="Platform() == 'arcade'"
 		Text="@'Serial #' .. GetSerialNumber()"
-		InitCommand="x,SCREEN_CENTER_X+280;y,SCREEN_CENTER_Y-161;shadowlength,2;horizalign,right;wrapwidthpixels,1000;zoom,0.5"
+		InitCommand="x,SCREEN_CENTER_X+280;y,SCREEN_CENTER_Y-181;shadowlength,2;horizalign,right;wrapwidthpixels,1000;zoom,0.5"
 		OnCommand="diffusealpha,0;linear,0.3;diffusealpha,1"
 		OffCommand="linear,0.3;diffusealpha,0"
 	/>
@@ -42,7 +42,7 @@
 		SetCommand="%function(self) if HubIsConnected() then self:settext('') else self:settext('Memory card USB hub disconnected') end end"
 		PulseMessageCommand="playcommand,Set"
 		Text=""
-		InitCommand="x,SCREEN_CENTER_X-280;y,SCREEN_CENTER_Y-161;shadowlength,2;horizalign,left;zoom,0.5;diffuseshift;playcommand,Set"
+		InitCommand="x,SCREEN_CENTER_X-280;y,SCREEN_CENTER_Y-181;shadowlength,2;horizalign,left;zoom,0.5;diffuseshift;playcommand,Set"
 		OnCommand="addx,-SCREEN_WIDTH;decelerate,0.3;addx,SCREEN_WIDTH"
 		OffCommand="accelerate,0.3;addx,SCREEN_WIDTH"
 	/>
