@@ -418,7 +418,9 @@ function GetModifierNames( num )
 	return s
 end
 
-
+function IsUsingWideScreen()
+    return PREFSMAN:GetPreference( 'DisplayAspectRatio' ) > 1.34
+end
 
 function SelectButtonAvailable()
 	if GetInputType() == "PIUIO" then return true end
