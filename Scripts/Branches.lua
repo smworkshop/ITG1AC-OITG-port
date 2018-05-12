@@ -116,7 +116,3 @@ function GetSetTimeNextScreen()
 
 	return "ScreenOptionsMenu"
 end
-
-function GetUpdateScreen()
-	return "ScreenOptionsMenu"
-end
