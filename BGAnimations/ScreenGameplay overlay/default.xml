@@ -69,7 +69,7 @@
 			<Actor
 				Class="DifficultyMeter"
 				Type="ScreenGameplay DifficultyMeterP1"
-				OnCommand="playcommand,Update"
+				OnCommand="x,-3;playcommand,Update"
 				CurrentStepsP1ChangedMessageCommand="playcommand,Update"
 				CurrentStepsP2ChangedMessageCommand="playcommand,Update"
 				UpdateCommand="%function(self) self:SetFromSteps(GAMESTATE:GetCurrentSteps(PLAYER_1)) end"
@@ -87,7 +87,7 @@
 			<Actor
 				Class="DifficultyMeter"
 				Type="ScreenGameplay DifficultyMeterP2"
-				OnCommand="playcommand,Update"
+				OnCommand="x,3;playcommand,Update"
 				CurrentStepsP1ChangedMessageCommand="playcommand,Update"
 				CurrentStepsP2ChangedMessageCommand="playcommand,Update"
 				UpdateCommand="%function(self) self:SetFromSteps(GAMESTATE:GetCurrentSteps(PLAYER_2)) end"
