@@ -1,5 +1,5 @@
 function PlayerColor( pn )
-	if pn == PLAYER_1 then return "#FBBE03" end	-- orange
+	if pn == PLAYER_1 then return "#FDDE81" end	-- orange
 	if pn == PLAYER_2 then return "#56FF48" end	-- green
 	return "1,1,1,1"
 end
