@@ -10,21 +10,20 @@
 		<Layer Type="BitmapText" Text="IN THE GROOVE" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#D57676;ztest,1" />
 		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-			<Layer Type="BitmapText" Text="THEME PORT BY NICK GIGLIO" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
+			<Layer Type="BitmapText" Text="THEME PORT BY TEAM INITIAL G" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
+		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+		<Layer Type="BitmapText" Text="INITIAL G TEAM" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#D57676;ztest,1" />
+		<Layer Type="BitmapText" Text="Assimleaf" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+		<Layer Type="BitmapText" Text="Jose_Varela" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
+		<Layer Type="BitmapText" Text="nick.n" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="Shoutouts and special thanks" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#76B1D5;ztest,1" />
 		<Layer Type="BitmapText" Text="Bryan Garofalo" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="Jason Bolt" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="Infamous Pat" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="Vyhd" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="Mary Samec" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
-		<Layer Type="BitmapText" Text="Menlo Gameworld" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#FFFFFF;ztest,1" />
 		<Layer Type="BitmapText" Text="ORIGINAL IN THE GROOVE TEAM" File="_eurostile normal" OnCommand="zoom,0.7;diffuse,#D57676;ztest,1" />
