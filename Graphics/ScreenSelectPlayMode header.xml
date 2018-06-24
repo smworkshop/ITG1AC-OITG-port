@@ -5,7 +5,7 @@
 			File="_eurostile blue glow"
 			InitCommand="%function(self) self:shadowlength(4); end"
 			OnCommand="zoom,.9;horizalign,left;cropright,1;linear,.3;cropright,0"
-			OffCommand="Accelerate,.2;ZoomX,2;ZoomY,0;DiffuseAlpha,0"
+			OffCommand="cropright,0;linear,.3;cropright,1"
 		/>
 	</children>
 </ActorFrame>
