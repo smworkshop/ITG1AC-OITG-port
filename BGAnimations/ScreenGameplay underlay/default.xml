@@ -1,6 +1,6 @@
 <ActorFrame> <children>
 	<ActorFrame 
-		Condition="GAMESTATE:GetPlayMode()==PLAY_MODE_REGULAR and GAMESTATE:GetEasiestStepsDifficulty()==DIFFICULTY_BEGINNER"
+		Condition="GAMESTATE:GetPlayMode()==PLAY_MODE_REGULAR and GAMESTATE:GetEasiestStepsDifficulty()==DIFFICULTY_BEGINNER and not IsTrainingSong()"
 		OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y-30" 
 	><children>
 		<Layer
@@ -91,7 +91,7 @@
 	</children></ActorFrame>
 	
 	<ActorFrame
-		Condition="GAMESTATE:IsHumanPlayer(PLAYER_1) and GAMESTATE:GetPlayMode()==PLAY_MODE_REGULAR and GAMESTATE:GetCurrentSteps(PLAYER_1):GetDifficulty()==DIFFICULTY_BEGINNER"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_1) and GAMESTATE:GetPlayMode()==PLAY_MODE_REGULAR and GAMESTATE:GetCurrentSteps(PLAYER_1):GetDifficulty()==DIFFICULTY_BEGINNER and not IsTrainingSong()"
 		OnCommand="x,SCREEN_CENTER_X-160;y,SCREEN_CENTER_Y+40;zoom,1.2;rotationx,-20"
 		FOV="45"
 		VanishX="SCREEN_CENTER_X-160"
@@ -124,7 +124,7 @@
 	</children></ActorFrame>
 
 	<ActorFrame
-		Condition="GAMESTATE:IsHumanPlayer(PLAYER_2) and GAMESTATE:GetPlayMode()==PLAY_MODE_REGULAR and GAMESTATE:GetCurrentSteps(PLAYER_2):GetDifficulty()==DIFFICULTY_BEGINNER"
+		Condition="GAMESTATE:IsHumanPlayer(PLAYER_2) and GAMESTATE:GetPlayMode()==PLAY_MODE_REGULAR and GAMESTATE:GetCurrentSteps(PLAYER_2):GetDifficulty()==DIFFICULTY_BEGINNER and not IsTrainingSong()"
 		OnCommand="x,SCREEN_CENTER_X+160;y,SCREEN_CENTER_Y+40;zoom,1.2;rotationx,-20"
 		FOV="45"
 		VanishX="SCREEN_CENTER_X+160"

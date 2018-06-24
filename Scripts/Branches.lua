@@ -46,7 +46,7 @@ function GetGameplayNextScreen()
 	end
 		
 	-- Never show evaluation for training.
-	if GAMESTATE:GetCurrentSong():GetSongDir() == "Songs/In The Groove/Training1/" then 
+	if IsTrainingSong() then 
 		if GAMESTATE:IsEventMode() then 
 			return SongSelectionScreen()
 		else
@@ -83,11 +83,16 @@ end
 
 function GetGameplayScreen()
 	local Song = GAMESTATE:GetCurrentSong();
-	if Song and Song:GetSongDir() == "Songs/In The Groove/Training1/" then
+	if IsTrainingSong() then
 		return "ScreenGameplayTraining"
 	end
 
 	return "ScreenGameplay"
+end
+
+function IsTrainingSong()
+	local Song = GAMESTATE:GetCurrentSong();
+	return Song == SONGMAN:FindSong('In The Groove/Training1/')
 end
 
 function SongSelectionScreen()

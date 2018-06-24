@@ -14,7 +14,7 @@
 		OffCommand="accelerate,0.8;addy,-100"
 	/>
 	<Layer
-		Condition="not GAMESTATE:IsDemonstration()"
+		Condition="not GAMESTATE:IsDemonstration() and not IsTrainingSong()"
 		File="ScreenGameplay Stage Frame"
 		OnCommand="x,SCREEN_CENTER_X-2;y,SCREEN_BOTTOM-40"
 	/>
