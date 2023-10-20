@@ -8,7 +8,10 @@ Intro was added to credit the team that helped me finally get this all together.
 
 
 [Credits]
-Assimileafy
-Arcticfqx
-JoseValera
-Niicccckkkk
+=Assimileafy=
+
+=Arcticfqx=
+
+=JoseValera=
+
+=Niicccckkkk=
