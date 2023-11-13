@@ -35,6 +35,13 @@
 		Command="x,SCREEN_CENTER_X-999;y,SCREEN_CENTER_Y-999;sleep,7.5;x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomtowidth,SCREEN_WIDTH;zoomtoheight,SCREEN_WIDTH/4*3*1.1;sleep,30;diffusealpha,0"
 	/>
 	<Layer
+		Class="AutoActor"
+		File="song list"
+		Command="hibernate,7.5;x,560;y,240;z,-100;rotationy,30"
+	
+	
+	/>
+	<Layer
 		Class="BitmapText"
 		Font="_eurostile normal"
 		Text="135 songs"
@@ -61,9 +68,6 @@
 			Command="horizalign,left;zoom,0.8;diffusealpha,0;sleep,11;linear,0.5;diffusealpha,0.3;linear,3;linear,0.5;diffusealpha,0.0"
 		/>
 	</children></Layer>
-
-
-
 	<Layer
 		Class="BitmapText"
 		Font="_eurostile normal"
