@@ -1,0 +1,57 @@
+<ActorFrame><children>
+	<!-- INITIAL G ANIMATION -->
+	<!-- 	 BY Jose_Varela 	 -->
+
+	<!-- Background layers -->
+
+	<Layer Type="Quad"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y;zoomto,SCREEN_WIDTH+3,SCREEN_HEIGHT;"
+		OnCommand="diffuse,1,0,0,1;diffuselowerright,0.5,0,0,1;diffuseupperleft,0.5,0,0,1;" />
+
+	<Layer Type="Quad"
+		InitCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y"
+		OnCommand="zoomto,SCREEN_WIDTH+3,SCREEN_HEIGHT;diffuse,0,0,0,1;sleep,1;linear,1;diffusealpha,0" />
+
+	<Layer Type="ActorFrame" OnCommand="x,SCREEN_CENTER_X;y,SCREEN_CENTER_Y"><children>
+
+		<Layer File="Letter" InitCommand="zoom,1"
+			OnCommand="%function(G)
+			G.faderight(G, 1);
+			G.fadeleft(G, 1);
+			G.cropleft(G, -1.5);
+			G.cropright(G, 0);
+			G.linear(G, 1);
+			G.cropright(G, -1.5);
+			G.cropleft(G, 1);
+			end"
+			/>
+	</children></Layer>
+
+		<!-- People -->
+		<!-- <Layer File="Jose" InitCommand="x,SCREEN_CENTER_X-140;y,SCREEN_CENTER_Y;zoom,0.7;fadebottom,1"
+		OnCommand="diffusealpha,0;sleep,1;decelerate,0.5;diffusealpha,1"
+		/> -->
+
+		<!-- animated logo -->
+	<Layer Type="ActorFrame" OnCommand="x,SCREEN_CENTER_X+150;y,SCREEN_CENTER_Y+150;hibernate,1.6"><children>
+		<Layer File="Init" InitCommand="zoom,0.3"
+			OnCommand="shadowlength,4;addx,-55;cropright,1;faderight,0.2;sleep,0.7;decelerate,0.8;cropright,0;faderight,0"
+			/>
+
+		<Layer File="Glow" InitCommand="x,-14;zoom,0.3"
+			OnCommand="diffusealpha,0;sleep,1.4;diffusealpha,1;zoom,0.3;decelerate,1;diffusealpha,0;zoom,0.2"
+			/>
+
+		<Layer File="Letter" InitCommand="zoom,0.3"
+			OnCommand="addx,-SCREEN_WIDTH;decelerate,1.4;addx,SCREEN_WIDTH+55;shadowlength,4"
+			/>
+
+		<Layer File="Glow" InitCommand="x,-14;zoom,0.3"
+			OnCommand="diffusealpha,0;sleep,1.4;diffusealpha,1;zoom,0.3;decelerate,1;diffusealpha,0;zoom,0.4"
+			/>
+
+		<Layer Font="_brush script mt 30px" Text="Let's Get Groovin!" InitCommand="x,100;y,50;zoom,0.9;horizalign,right;shadowlength,1;diffuse,1,0.9,0,1;diffusebottomedge,1,0.7,0,1"
+		OnCommand="cropright,1;faderight,0.2;sleep,1;decelerate,1;cropright,-0.5"
+		/>
+	</children></Layer>
+</children></ActorFrame>

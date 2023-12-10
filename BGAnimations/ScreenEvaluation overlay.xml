@@ -2,7 +2,7 @@
 	<children>
 		<ActorFrame
 			Condition="GAMESTATE:IsPlayerEnabled(PLAYER_1)"
-			OnCommand="x,SCREEN_CENTER_X-242;y,SCREEN_CENTER_Y-120;difficultyoffset;addx,-SCREEN_WIDTH/2;sleep,3;decelerate,0.3;addx,+SCREEN_WIDTH/2"
+			OnCommand="x,SCREEN_CENTER_X-200;y,SCREEN_CENTER_Y-160;difficultyoffset;addx,-SCREEN_WIDTH/2;sleep,3;decelerate,0.3;addx,+SCREEN_WIDTH/2"
 			OffCommand="accelerate,0.3;addx,-SCREEN_WIDTH/2"
 		> <children>
 			<Actor
@@ -10,6 +10,10 @@
 				OnCommand="animate,0;playcommand,Update"
 				UpdateCommand="%function(self,parent) SetDifficultyFrameFromGameState(self, PLAYER_1) end"
 			/>
+			<ActorFrame InitCommand="x,-20;y,35"> <children>
+				<Actor File="@THEME:GetPath(EC_GRAPHICS,'_name','frame')" />
+				<Actor Font="Common Normal" Text="@GAMESTATE:GetPlayerDisplayName(PLAYER_1)" OnCommand="@'ShadowLength,2;zoom,0.5;diffuse,'..PlayerColor(PLAYER_1)" />
+			</children></ActorFrame>
 			<Actor
 				Class="DifficultyMeter"
 				Type="ScreenGameplay DifficultyMeterP1"
@@ -26,7 +30,7 @@
 
 		<ActorFrame
 			Condition="GAMESTATE:IsPlayerEnabled(PLAYER_2)"
-			OnCommand="x,SCREEN_CENTER_X+238;y,SCREEN_CENTER_Y-120;difficultyoffset;addx,+SCREEN_WIDTH/2;sleep,3;decelerate,0.3;addx,-SCREEN_WIDTH/2"
+			OnCommand="x,SCREEN_CENTER_X+200;y,SCREEN_CENTER_Y-160;difficultyoffset;addx,+SCREEN_WIDTH/2;sleep,3;decelerate,0.3;addx,-SCREEN_WIDTH/2"
 			OffCommand="accelerate,0.3;addx,+SCREEN_WIDTH/2"
 		> <children>
 			<Actor
@@ -34,6 +38,10 @@
 				OnCommand="animate,0;playcommand,Update"
 				UpdateCommand="%function(self,parent) SetDifficultyFrameFromGameState(self, PLAYER_2) end"
 			/>
+			<ActorFrame InitCommand="x,20;y,35"> <children>
+				<Actor File="@THEME:GetPath(EC_GRAPHICS,'_name','frame')" />
+				<Actor Font="Common Normal" Text="@GAMESTATE:GetPlayerDisplayName(PLAYER_2)" OnCommand="@'ShadowLength,2;zoom,0.5;diffuse,'..PlayerColor(PLAYER_2)" />
+			</children></ActorFrame>
 			<Actor
 				Class="DifficultyMeter"
 				Type="ScreenGameplay DifficultyMeterP2"
